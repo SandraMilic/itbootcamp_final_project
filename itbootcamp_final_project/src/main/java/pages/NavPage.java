@@ -49,4 +49,8 @@ public class NavPage {
     public WebElement getCNlanguageButton() {
         return this.driver.findElement(By.className("btnCN"));
     }
+
+    public WebElement getSignupButton() {
+        return  this.driver.findElement(By.className("mdi-plus-circle-outline"));
+    }
 }

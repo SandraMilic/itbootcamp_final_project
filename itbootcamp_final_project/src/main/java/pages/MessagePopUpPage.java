@@ -30,4 +30,16 @@ public class MessagePopUpPage {
     public WebElement getPopUpCloseButton() {
         return this.driver.findElement(By.className("v-btn--text"));
     }
+
+    public void waitForDialogVerifyYourAccountToBeVisible() {
+        this.wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("v-card")));
+    }
+
+    public WebElement getTitleFromDialogBox() {
+        return this.driver.findElement(By.className("v-card__title"));
+    }
+
+    public WebElement getDialogBoxCloseButton() {
+        return  this.driver.findElement(By.className("btnClose"));
+    }
 }
