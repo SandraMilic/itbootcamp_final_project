@@ -53,4 +53,16 @@ public class NavPage {
     public WebElement getSignupButton() {
         return  this.driver.findElement(By.className("mdi-plus-circle-outline"));
     }
+
+    public WebElement getAdminButton() {
+        return this.driver.findElement(By.className("btnAdmin"));
+    }
+
+    public WebElement getCitiesLinkFromAdminDropDown() {
+        return this.driver.findElement(By.className("btnAdminCities"));
+    }
+
+    public  WebElement getUsersLinkFromAdminDropDown() {
+        return this.driver.findElement(By.className("btnAdminUsers"));
+    }
 }

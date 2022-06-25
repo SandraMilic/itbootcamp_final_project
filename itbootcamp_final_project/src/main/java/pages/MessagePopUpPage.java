@@ -22,6 +22,13 @@ public class MessagePopUpPage {
         this.wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.className("v-snack__wrapper")));
     }
+    public void waitForPopUpOnCityPageToBeVisible() {
+        this.wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.className("success")));
+    }
+    public WebElement getMessagesFromPopUpOnCityPage() {
+        return this.driver.findElement(By.className("success"));
+    }
 
     public WebElement getTextMessages() {
         return this.driver.findElement(By.className("v-snack__content"));
