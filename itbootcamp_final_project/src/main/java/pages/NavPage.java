@@ -62,6 +62,10 @@ public class NavPage {
         return this.driver.findElement(By.className("btnCN"));
     }
 
+    public WebElement getTextFromHeaderOnHomePage() {
+        return this.driver.findElement(By.className("display-2"));
+    }
+
     public WebElement getSignupButton() {
         return  this.driver.findElement(By.className("mdi-plus-circle-outline"));
     }
