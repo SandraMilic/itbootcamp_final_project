@@ -18,6 +18,18 @@ public class NavPage {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
+    public WebElement getHomeButton() {
+        return this.driver.findElement(By.className("btnHome"));
+    }
+
+    public WebElement getMyProfileButton() {
+        return this.driver.findElement(By.className("btnProfile"));
+    }
+
+    public WebElement getAboutButton() {
+        return this.driver.findElement(By.className("btnAbout"));
+    }
+
     public WebElement getLoginButton() {
         return this.driver.findElement(By.className("btnLogin"));
     }
